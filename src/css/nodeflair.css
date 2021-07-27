@@ -79,6 +79,7 @@ body {
     flex-wrap: nowrap;
     width: 100%;
     margin-left: -8px;
+    margin-top: 10px;
 }
 
 .job-listing-card {
@@ -148,6 +149,7 @@ body {
     margin-top: 15px;
     margin-bottom: -20px;
 }
+
 .job-listing-card-middle-information {
     display: flex;
     align-items: center;
@@ -206,4 +208,19 @@ body {
     border-radius: 5px;
     padding: 5px 8px;
     float: right;
+}
+
+@media (max-width: 600px) {
+    .job-listing-card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        width: fit-content(80%);
+        height: 31%;
+        margin-bottom: 2em;
+        align-content: center;
+    }
+
+    .job-listing-card-top-information h2 {
+        font-size: 1em;
+    }
 }

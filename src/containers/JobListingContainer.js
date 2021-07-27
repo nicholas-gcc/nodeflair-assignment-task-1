@@ -24,7 +24,7 @@ export default function JobListingContainer() {
                     timestamp="2 minutes ago"
                     specialisation="Backend"
                     techStackList={["Spring", "Java"]}
-                />
+                    />
 
                 <JobListing 
                     avatar={GoldmanSachs}
